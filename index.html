@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Vocab Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Mini Vocab Trainer</h1>
+    <p class="sub">Quickly add words and practice — built in one day 🚀</p>
+  </header>
+
+  <main class="container">
+    <section class="left">
+      <form id="addForm" class="card">
+        <h2>Add a word</h2>
+        <input id="word" placeholder="Word (e.g., 'serendipity')" required />
+        <input id="translation" placeholder="Translation (e.g., 'sorte feliz')" required />
+        <input id="example" placeholder="Example sentence (optional)" />
+        <div class="row">
+          <button id="addBtn" type="submit">Add</button>
+          <button id="clearAll" type="button" class="danger">Clear all</button>
+        </div>
+      </form>
+
+      <div class="card" id="listCard">
+        <h2>Your words</h2>
+        <ul id="wordList"></ul>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="card">
+        <h2>Practice</h2>
+        <div id="quizArea" class="quizArea">
+          <p id="question">Add words to start practicing.</p>
+          <div id="choices" class="choices"></div>
+          <div class="row">
+            <button id="startBtn">Start Practice</button>
+            <button id="nextBtn" style="display:none">Next</button>
+          </div>
+          <p id="score" class="meta"></p>
+        </div>
+      </div>
+
+      <div class="card metaCard">
+        <h3>Session</h3>
+        <p id="stats">Words: 0 • Correct: 0 • Attempts: 0</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made by Pedro — quick one-day project</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
