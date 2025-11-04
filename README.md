@@ -13,7 +13,9 @@ Small single-page app to add vocabulary and practice quick multiple-choice quizz
 ```bash
 git clone https://github.com/<your-username>/mini-vocab-trainer.git
 cd mini-vocab-trainer
+```
 
 ## Preview
 
 ![App Screenshot](./screenshots/mini-trainer1.jpg)
+
